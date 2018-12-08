@@ -350,6 +350,8 @@ namespace Calculator
             InputText.Text = "0";
             previewOperations.Text = string.Empty;
             DivisionByZeroLabel.Text = string.Empty;
+            // Set divisionByZero to not add anything to list when DeleteSequence method will be executed
+            divisionByZero = true;
             result = 0;
             DeleteSequence(sender, e);
         }
